@@ -28,7 +28,7 @@ data "aws_iam_policy_document" "assume_role_federated_oidc" {
 
     condition {
       test     = "StringEquals"
-      variable = "${var.tfc_identity_provider_arn}:aud"
+      variable = "${var.tfc_identity_provider_name}:aud"
       values   = [var.tfc_identity_provider_audience]
     }
 

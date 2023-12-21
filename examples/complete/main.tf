@@ -49,7 +49,6 @@ module "terraform_aws_role_terraform_cloud" {
   iam_role_enable_full_iam_access = true
   iam_role_prefix                 = "example-service-"
   tfc_identity_provider_arn       = aws_iam_openid_connect_provider.terraform_cloud.arn
-  tfc_identity_provider_audience  = "aws.workload.identity"
 
   resource_tags = {
     Environment = "examples"

@@ -46,6 +46,13 @@ variable "tfc_identity_provider_arn" {
 }
 
 variable "tfc_identity_provider_audience" {
+  default     = "aws.workload.identity"
   description = "Audience Value Expected by the Terraform Cloud OIDC Identity Provider"
+  type        = string
+}
+
+variable "tfc_identity_provider_name" {
+  default     = "app.terraform.io"
+  description = "Name Assigned to the Terraform Cloud OIDC Identity Provider"
   type        = string
 }
