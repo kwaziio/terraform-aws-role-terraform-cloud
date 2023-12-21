@@ -9,7 +9,7 @@ variable "iam_role_enable_full_iam_access" {
 }
 
 variable "iam_role_name" {
-  default     = "eks-node"
+  default     = "terraform-cloud"
   description = "Name to Assign to the Created AWS IAM Role"
   type        = string
 }
